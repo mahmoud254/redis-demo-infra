@@ -1,0 +1,12 @@
+cloudProvider: aws
+awsRegion: ${region}
+rbac:
+  create: true
+priorityClassName: system-cluster-critical
+autoDiscovery:
+  enabled: true
+  clusterName: ${cluster_name}
+extraArgs:
+  expander: least-waste
+  skip-nodes-with-system-pods: false
+  skip-nodes-with-local-storage: false
