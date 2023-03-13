@@ -87,3 +87,10 @@ module "test_eks_addons" {
     addon_depends_on_nodegroup_no_taint = module.test_dev_apps_nodegroup.node_group_without_taint_arn
     eks_alb_role_arn = module.test_eks.eks_alb_role_arn
 }
+
+
+module "backend_ecr" {
+    source = "./ecr"
+    env = lower(var.env)
+    ecr_name = var.ecr_name
+}

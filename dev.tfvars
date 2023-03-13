@@ -63,3 +63,5 @@ test_redis_node_count = "1"
 test_redis_parameter_group_name = "default.redis7"
 test_redis_version = "7.0"
 test_redis_port = "6379"
+
+ecr_name = "backend"

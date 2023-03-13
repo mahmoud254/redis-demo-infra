@@ -164,6 +164,9 @@ variable test_redis_port {
   type = string
 }
 
+variable ecr_name {
+  type = string
+}
 
 #####################################################
 #  Addons
