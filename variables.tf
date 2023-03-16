@@ -18,6 +18,11 @@ variable vpc_name {
   type = string
 }
 
+variable exclude_zone_ids {
+  type = list
+  default = null
+}
+
 #####################################################
 #  security group
 #####################################################

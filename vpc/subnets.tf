@@ -1,5 +1,5 @@
 data "aws_availability_zones" "available" {
-
+  exclude_zone_ids = var.exclude_zone_ids
 }
 
 resource "aws_subnet" "public_subnets" {

@@ -39,7 +39,8 @@ This repo cantains all the code to create the EKS infra, as well as its addons l
 # Example of deploying the infra
 
 ```bash
-terraform init
+# Make sure to replace BUCKET, KEY, REGION
+terraform init -backend-config="bucket=BUCKET" -backend-config="key=KEY" -backend-config="region=REGION"
 ```
 
 ```bash

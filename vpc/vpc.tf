@@ -9,3 +9,4 @@ resource "aws_vpc" "my_vpc" {
     Name = "${var.vpc_name}-${var.env}-VPC"
   }
 }
+

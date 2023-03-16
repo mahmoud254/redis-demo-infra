@@ -8,7 +8,7 @@ infrastructure_region = "eu-central-1"
 # ------------------------------------------------------
 #                       EKS Cluster                    #
 # ------------------------------------------------------
-cluster_name = "Test"
+cluster_name = "MAHMOUD-ALAA-Test"
 cluster_version = "1.24"
 # ------------------------------------------------------
 #                       NODE GROUPS                    #
@@ -32,11 +32,12 @@ test_dev_apps_taint_effect = ""
 # ------------------------------------------------------
 vpc_cidr_block = "10.0.0.0/16"
 vpc_name = "test"
+exclude_zone_ids = [ "use1-az1","use1-az2","use1-az3","use1-az5"]
 # ------------------------------------------------------
 #                       SG                             #
 # ------------------------------------------------------
 
-sg_name_redis = "TEST-REDIS"
+sg_name_redis = "MAHMOUD-ALAA-TEST-REDIS"
 ingress_from_port_redis = 6379
 ingress_to_port_redis = 6379
 ingress_protocol_redis = "tcp"
@@ -50,13 +51,13 @@ egress_cidr_blocks_list_redis = ["0.0.0.0/0"]
 # ------------------------------------------------------
 
 # must be lowercase
-test_elasticache_private_subnet_name = "test-private-elasticache-subnets-group"
+test_elasticache_private_subnet_name = "mahmoud-alaa-test-private-elasticache-subnets-group"
 
 # ------------------------------------------------------
 #                        elasticache                    #
 # ------------------------------------------------------
 
-test_redis_name = "test-sentry"
+test_redis_name = "mahmoud-alaa-test"
 test_redis_engine = "redis"
 test_redis_node_type = "cache.t3.micro"
 test_redis_node_count = "1"
