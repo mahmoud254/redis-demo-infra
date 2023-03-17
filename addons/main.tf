@@ -27,3 +27,9 @@ module "argocd" {
   source                        = "./argocd"
   addon_depends_on_nodegroup_no_taint         = var.addon_depends_on_nodegroup_no_taint
 }
+
+module "external_secrets_controller" {
+  source         = "./external_secrets"
+  region         = var.region
+  addon_depends_on_nodegroup_no_taint = var.addon_depends_on_nodegroup_no_taint
+}
