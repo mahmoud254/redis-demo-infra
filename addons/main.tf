@@ -18,11 +18,6 @@ module "alb_ingress" {
   cluster_name = "${var.cluster_name}-${var.env}"
 }
 
-module "nginx_ingress" {
-  source                        = "./nginx_ingress"
-  addon_depends_on_nodegroup_no_taint         = var.addon_depends_on_nodegroup_no_taint
-}
-
 module "argocd" {
   source                        = "./argocd"
   addon_depends_on_nodegroup_no_taint         = var.addon_depends_on_nodegroup_no_taint

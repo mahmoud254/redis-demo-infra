@@ -20,7 +20,6 @@ This repo cantains all the code to create the EKS infra, as well as its addons l
 - argocd: addon module to install argocd
 - external_secrets: allows us to store secrets on aws secrets manager and apply them as kubernetes resources
 - hpa: addon module to install horizontal pod auto scaler
-- nginx_ingress: addon module to install nginx ingress
 - node_autoscaler: addon module to install the node auto scaler 
 2. ecr  ---> module to create ecr (Elastic container registery)
 3. eks ---> module to create the EKS cluster itself (not the nodes)

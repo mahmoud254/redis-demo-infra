@@ -14,7 +14,7 @@ cluster_version = "1.24"
 #                       NODE GROUPS                    #
 # ------------------------------------------------------
 test_dev_apps_nodegroup_name = "DEV-APPLICATIONS-NODEGROUP"
-test_dev_apps_node_group_desired_size = 1
+test_dev_apps_node_group_desired_size = 2
 test_dev_apps_node_group_min_size = 1
 test_dev_apps_node_group_max_size = 2
 test_dev_apps_node_group_ami_type = "AL2_x86_64"
